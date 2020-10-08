@@ -1,0 +1,51 @@
+package net.pefi.vinmonopolet.model
+
+import java.math.BigDecimal
+import java.math.BigInteger
+import java.time.LocalDateTime
+
+data class Product(
+        val date: LocalDateTime,
+        val objectID: BigInteger,
+        val name: String,
+        val volume: String,
+        val price: BigDecimal,
+        val pricePrLtr: BigDecimal,
+        val type: String,
+        val selection: String,
+        val storeCategory: String,
+        val body: Int,
+        val freshness: Int,
+        val tannins: Int,
+        val bitterness: Int,
+        val sweetness: Int,
+        val color: String,
+        val aroma: String,
+        val flavor: String,
+        val foodPairings: List<String>,
+        val country: String,
+        val district: String,
+        val subDistrict: String,
+        val year: String,
+        val material: String,
+        val method: String,
+        val alcohol: Double,
+        val sugar: Double,
+        val acid: Double,
+        val maturity: String,
+        val producer: String,
+        val wholesaleDealer: String,
+        val distributor: String,
+        val packagingType: String,
+        val corkType: String,
+        val url: String,
+        var images: List<Image>,
+        val eco: Boolean,
+        val bio: Boolean,
+        val fairtrade: Boolean,
+        val ecoPackaging: Boolean,
+        val lowGluten: Boolean,
+        val kosher: Boolean,
+        val mainGTIN: String,
+        val otherGTINs: List<String>)
+
